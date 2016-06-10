@@ -42,6 +42,7 @@ var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
+    console.log(string);
   return string;
 }
 
@@ -208,7 +209,7 @@ function buildCategoriesViewHtml(categories,
       insertProperty(html, 
                      "short_name",
                      short_name);
-      console.log(html);
+      
     finalHtml += html;
   }
 
