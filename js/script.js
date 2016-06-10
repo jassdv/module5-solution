@@ -178,7 +178,7 @@ function buildAndShowCategoriesHTML (categories) {
             buildCategoriesViewHtml(categories, 
                                     categoriesTitleHtml,
                                     categoryHtml);
-            console.log(categoriesViewHtml);
+            
           insertHtml("#main-content", categoriesViewHtml);
         },
         false);
