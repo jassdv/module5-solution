@@ -208,6 +208,7 @@ function buildCategoriesViewHtml(categories,
       insertProperty(html, 
                      "short_name",
                      short_name);
+      console.log(html);
     finalHtml += html;
   }
 
