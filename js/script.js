@@ -42,8 +42,6 @@ var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
-    console.log(propValue);
-    console.log(string);
   return string;
 }
 
@@ -120,8 +118,7 @@ function buildAndShowHomeHTML (categories) {
       // 
       var propToReplace = "'" + chosenCategoryShortName.short_name + "'";
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName",propToReplace);
-      console.log(chosenCategoryShortName.short_name);
-      console.log(homeHtmlToInsertIntoMainPage);
+      
       
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
